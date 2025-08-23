@@ -5,10 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- implement tailwind css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="flex justify-center items-center h-[100vh]">
+    <main>
+      <div>
+        
+      </div>
+      <form class="p-5 bg-slate-400 w-[350px]">
+        <div>
+          <label class="block" for="numberInput">Mobile Number</label>
+          <input
+            type="text"
+            required
+            placeholder="Enter your number"
+            class="input mt-3"
+            id="numberInput"
+          />
+        </div>
+        <div>
+          <label class="block mt-3" for="pinNumberInput">4-digit pin</label>
+          <input
+            type="text"
+            required
+            placeholder="Enter 4-digit pin"
+            class="input mt-3"
+            id="pinNumberInput"
+          />
+        </div>
+        <button class="btn mt-5 w-full">Log in</button>
+      </form>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
