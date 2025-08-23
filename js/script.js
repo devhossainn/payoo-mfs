@@ -18,5 +18,4 @@ loginBtn.addEventListener("click", function (e) {
     alert("Your number is not valid or password incorrect");
   }
 });
-// home page interactive
 
