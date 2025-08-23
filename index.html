@@ -13,33 +13,46 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="flex justify-center items-center h-[100vh]">
-    <main>
-      <div>
-        
+  <body class="flex justify-center items-center h-[100vh] bg-[#f4f5f7]">
+    <main class="flex flex-col justify-center items-center">
+      <div
+        id="loginBg"
+        class="w-[300px] bg-cover h-[150px] bg-[url(/assets/bg.png)] flex justify-center items-center"
+      >
+        <img src="./assets/checkMark.png" alt="checkMark" class="" />
       </div>
-      <form class="p-5 bg-slate-400 w-[350px]">
+      <form class="p-8 bg-white w-[350px] rounded-3xl">
         <div>
-          <label class="block" for="numberInput">Mobile Number</label>
+          <label class="block font-semibold" for="numberInput"
+            >Mobile Number</label
+          >
           <input
             type="text"
             required
             placeholder="Enter your number"
-            class="input mt-3"
+            class="input mt-2 rounded-3xl focus:outline-none"
             id="numberInput"
           />
         </div>
         <div>
-          <label class="block mt-3" for="pinNumberInput">4-digit pin</label>
+          <label class="block mt-5 font-semibold" for="pinNumberInput"
+            >4-digit pin</label
+          >
           <input
             type="text"
             required
             placeholder="Enter 4-digit pin"
-            class="input mt-3"
+            class="input mt-2 rounded-3xl focus:outline-none"
             id="pinNumberInput"
+            value="1234"
           />
         </div>
-        <button class="btn mt-5 w-full">Log in</button>
+        <button
+          id="loginBtn"
+          class="btn mt-5 w-full rounded-3xl bg-[#0874f2] text-white"
+        >
+          Log in
+        </button>
       </form>
     </main>
     <script src="./script.js"></script>
