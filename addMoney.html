@@ -111,7 +111,20 @@
         <h3 class="text-lg font-semibold">Add Money</h3>
         <form class="mt-2 p-6 bg-[#fff] rounded-3xl">
           <div class="input-group">
-            <label for="bank-accNumber" class="text-base font-medium block"
+            <label for="bank-name" class="text-base font-medium block"
+              >Select a Bank</label
+            >
+            <select
+              class="select w-full h-13 px-5 mt-3 rounded-3xl border-none bg-[#f4f5f7] focus:outline-[#0000001c] text-base"
+            >
+              <option selected hidden>Select a Bank</option>
+              <option>City Bank</option>
+              <option>Dutch Bangla Bank</option>
+              <option>Bangladesh Bank</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="bank-accNumber" class="text-base font-medium block mt-5"
               >Bank Account Number</label
             >
             <input

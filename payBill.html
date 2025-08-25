@@ -74,7 +74,9 @@
             class="flex flex-col justify-center items-center py-5 px-2 border border-[#0808081a] rounded-lg w-full"
           >
             <img src="./assets/transfer.png" alt="addMoney" class="w-[30%]" />
-            <p class="serviceTitle text-sm mt-2 text-[#08080880]">Transfer Money</p>
+            <p class="serviceTitle text-sm mt-2 text-[#08080880]">
+              Transfer Money
+            </p>
           </div>
           <div
             id="getBonus"
@@ -94,17 +96,35 @@
             id="transactions"
             class="flex flex-col justify-center items-center py-5 px-2 border border-[#0808081a] rounded-lg w-full"
           >
-            <img src="./assets/transaction.png" alt="addMoney" class="w-[30%]" />
-            <p class="serviceTitle text-sm mt-2 text-[#08080880]">Transactions</p>
+            <img
+              src="./assets/transaction.png"
+              alt="addMoney"
+              class="w-[30%]"
+            />
+            <p class="serviceTitle text-sm mt-2 text-[#08080880]">
+              Transactions
+            </p>
           </div>
-         
         </div>
       </section>
       <section id="pay-bill" class="px-5 mt-6 mb-10">
         <h3 class="text-lg font-semibold">Pay Bill</h3>
         <form class="mt-2 p-6 bg-[#fff] rounded-3xl">
           <div class="input-group">
-            <label for="bank-accNumber" class="text-base font-medium block"
+            <label for="bank-name" class="text-base font-medium block"
+              >Select a Bank</label
+            >
+            <select
+              class="select w-full h-13 px-5 mt-3 rounded-3xl border-none bg-[#f4f5f7] focus:outline-[#0000001c] text-base"
+            >
+              <option selected hidden>Select a Bank</option>
+              <option>City Bank</option>
+              <option>Dutch Bangla Bank</option>
+              <option>Bangladesh Bank</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="bank-accNumber" class="text-base font-medium block mt-5"
               >Bank Account Number</label
             >
             <input
