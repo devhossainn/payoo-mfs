@@ -1,0 +1,8 @@
+.focus-effect:hover {
+  background: #0874f20d;
+  border: 1px solid #0874f2;
+}
+.focus-effect:hover p {
+  color: #0874f2;
+  font-weight: 500;
+}
