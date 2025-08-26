@@ -5,7 +5,10 @@ const transferMoneyElm = document.getElementById("transfer-money-feature");
 const getBonusElm = document.getElementById("get-bonus-feature");
 const payBillElm = document.getElementById("pay-bill-feature");
 const transactionElm = document.getElementById("transaction-feature");
-
+// logout btn
+document.getElementById("log-out-btn").addEventListener("click", function (e) {
+  window.location.href = "./index.html";
+});
 // AddMoney feature functionality
 document
   .getElementById("add-money-feature-btn")
@@ -94,7 +97,6 @@ document
     balanceElm.innerText = totalBalance;
   });
 // get bonus feature
-
 document
   .getElementById("get-bonus-feature-btn")
   .addEventListener("click", function (e) {
