@@ -1,1 +1,0 @@
-console.log("this is transfer money page")

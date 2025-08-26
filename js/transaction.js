@@ -1,1 +1,0 @@
-console.log("show transaction page")
