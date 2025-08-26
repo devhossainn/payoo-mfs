@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payoo/addmoney</title>
+    <title>Payoo/pay-bill</title>
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -20,14 +20,14 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#f4f5f7] h-[100vh] pb-6">
+  <body class="bg-[#f4f5f7] h-[100vh] mb-12">
     <header
       class="mx-auto flex justify-between items-center py-3 px-5 bg-[#ffffff]"
     >
       <div class="flex justify-start items-center">
         <img class="w-[30%]" src="./assets/checkMark.png" alt="" />
         <span>
-          <h2 id="balance" class="text-2xl font-bold">$45500</h2>
+          <h2 class="text-2xl font-bold">$ <span id="balance">45500</span></h2>
           <p id="balanceTitle" class="text-[#08080862]">Available Balance</p>
         </span>
       </div>
@@ -107,8 +107,8 @@
           </div>
         </div>
       </section>
-      <section id="add-money" class="px-5 mt-6 mb-10">
-        <h3 class="text-lg font-semibold">Add Money</h3>
+      <section id="pay-bill" class="px-5 mt-6 mb-10">
+        <h3 class="text-lg font-semibold">Pay Bill</h3>
         <form class="mt-2 p-6 bg-[#fff] rounded-3xl">
           <div class="input-group">
             <label for="bank-name" class="text-base font-medium block"
@@ -160,12 +160,12 @@
           <button
             class="btn w-full mt-5 h-12 rounded-3xl text-white bg-[#0874F2] text-lg"
           >
-            Add Money
+            Pay Now
           </button>
         </form>
       </section>
     </main>
+    <script src="./js/payBill.js"></script>
     <script src="./reusable.js"></script>
-    <script src="./js/addMoney.js"></script>
   </body>
 </html>

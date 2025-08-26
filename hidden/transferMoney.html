@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payoo/get-bonus</title>
+    <title>Payoo/transferMoney</title>
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -20,14 +20,14 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#f4f5f7] h-[100vh] pb-6">
+  <body class="bg-[#f4f5f7] pb-6">
     <header
       class="mx-auto flex justify-between items-center py-3 px-5 bg-[#ffffff]"
     >
       <div class="flex justify-start items-center">
         <img class="w-[30%]" src="./assets/checkMark.png" alt="" />
         <span>
-          <h2 id="balance" class="text-2xl font-bold">$45500</h2>
+          <h2 class="text-2xl font-bold">$ <span id="balance">45500</span></h2>
           <p id="balanceTitle" class="text-[#08080862]">Available Balance</p>
         </span>
       </div>
@@ -74,7 +74,9 @@
             class="flex flex-col justify-center items-center py-5 px-2 border border-[#0808081a] rounded-lg w-full"
           >
             <img src="./assets/transfer.png" alt="addMoney" class="w-[30%]" />
-            <p class="serviceTitle text-sm mt-2 text-[#08080880]">Transfer Money</p>
+            <p class="serviceTitle text-sm mt-2 text-[#08080880]">
+              Transfer Money
+            </p>
           </div>
           <div
             id="getBonus"
@@ -94,23 +96,50 @@
             id="transactions"
             class="flex flex-col justify-center items-center py-5 px-2 border border-[#0808081a] rounded-lg w-full"
           >
-            <img src="./assets/transaction.png" alt="addMoney" class="w-[30%]" />
-            <p class="serviceTitle text-sm mt-2 text-[#08080880]">Transactions</p>
+            <img
+              src="./assets/transaction.png"
+              alt="addMoney"
+              class="w-[30%]"
+            />
+            <p class="serviceTitle text-sm mt-2 text-[#08080880]">
+              Transactions
+            </p>
           </div>
-         
         </div>
       </section>
-      <section id="get-bonus" class="px-5 mt-6 mb-10">
-        <h3 class="text-lg font-semibold">Get Bonus</h3>
+      <section id="transfer-money" class="px-5 mt-6 mb-10">
+        <h3 class="text-lg font-semibold">Transfer Money</h3>
         <form class="mt-2 p-6 bg-[#fff] rounded-3xl">
           <div class="input-group">
-            <label for="coupon-number" class="text-base font-medium block"
-              >Coupon Number</label
+            <label for="account-number" class="text-base font-medium block"
+              >User Account Number</label
             >
             <input
               type="text"
-              id="agent-number"
-              placeholder=" Enter your coupon"
+              id="account-number"
+              placeholder="Enter 11 digit number"
+              class="w-full h-13 px-5 mt-3 rounded-3xl border-none bg-[#f4f5f7] focus:outline-[#0000001c]"
+            />
+          </div>
+          <div class="input-group mt-5">
+            <label for="amount" class="text-base font-medium block"
+              >Amount</label
+            >
+            <input
+              type="text"
+              id="amount"
+              placeholder="Enter amount to transfer"
+              class="w-full h-13 px-5 mt-3 rounded-3xl border-none bg-[#f4f5f7] focus:outline-[#0000001c]"
+            />
+          </div>
+          <div class="input-group mt-5">
+            <label for="pin-number" class="text-base font-medium block"
+              >Pin Number</label
+            >
+            <input
+              type="text"
+              id="pin-number"
+              placeholder="Enter 4 digit pin number"
               class="w-full h-13 px-5 mt-3 rounded-3xl border-none bg-[#f4f5f7] focus:outline-[#0000001c]"
             />
           </div>
@@ -118,12 +147,12 @@
           <button
             class="btn w-full mt-5 h-12 rounded-3xl text-white bg-[#0874F2] text-lg"
           >
-            Get Bonus
+            Send Now
           </button>
         </form>
       </section>
     </main>
-    <script src="./js/bonus.js"></script>
+    <script src="./js/transferMoney.js"></script>
     <script src="./reusable.js"></script>
   </body>
 </html>
